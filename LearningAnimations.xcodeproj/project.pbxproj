@@ -12,6 +12,8 @@
 		BC1B07451FEAC06800371D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1B07431FEAC06800371D73 /* Main.storyboard */; };
 		BC1B07471FEAC06800371D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1B07461FEAC06800371D73 /* Assets.xcassets */; };
 		BC1B074A1FEAC06800371D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1B07481FEAC06800371D73 /* LaunchScreen.storyboard */; };
+		BC1B07531FEAC0B900371D73 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B07511FEAC0B900371D73 /* HolderView.swift */; };
+		BC1B07541FEAC0B900371D73 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B07521FEAC0B900371D73 /* OvalLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BC1B07461FEAC06800371D73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1B07491FEAC06800371D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC1B074B1FEAC06800371D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1B07511FEAC0B900371D73 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolderView.swift; path = ../../Animations/HolderView.swift; sourceTree = "<group>"; };
+		BC1B07521FEAC0B900371D73 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OvalLayer.swift; path = ../../Animations/OvalLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		BC1B073E1FEAC06800371D73 /* LearningAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				BC1B07511FEAC0B900371D73 /* HolderView.swift */,
+				BC1B07521FEAC0B900371D73 /* OvalLayer.swift */,
 				BC1B073F1FEAC06800371D73 /* AppDelegate.swift */,
 				BC1B07411FEAC06800371D73 /* ViewController.swift */,
 				BC1B07431FEAC06800371D73 /* Main.storyboard */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1B07531FEAC0B900371D73 /* HolderView.swift in Sources */,
+				BC1B07541FEAC0B900371D73 /* OvalLayer.swift in Sources */,
 				BC1B07421FEAC06800371D73 /* ViewController.swift in Sources */,
 				BC1B07401FEAC06800371D73 /* AppDelegate.swift in Sources */,
 			);
