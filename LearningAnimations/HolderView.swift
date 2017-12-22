@@ -13,7 +13,11 @@ protocol HolderViewDelegate {
 }
 
 class HolderView: UIView {
+    
+    // MARK: Properties
     let ovalLayer = OvalLayer()
+    let traingleLayer = TriangleLayer()
+    
     var parentFrame :CGRect = CGRect.zero
     var delegate:HolderViewDelegate?
     
@@ -25,9 +29,20 @@ class HolderView: UIView {
         super.init(coder: coder)!
     }
     
-    func addOval() {
+    @objc func addOval() {
+        print("Reached addoval")
         layer.addSublayer(ovalLayer)
         ovalLayer.expand()
+    }
+    func wobbleOval(){
+        layer.addSublayer(traingleLayer)
+        ovalLayer.wobble()
+        Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.addOval), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.9, target: self, selector: #selector(self.drawAnimatedTriangle), userInfo: nil, repeats: false)
+    }
+    @objc func drawAnimatedTriangle(){
+        print("Reached drawAnimatedTriangle")
+        traingleLayer.animate()
     }
 }
 
